@@ -107,6 +107,20 @@ p {
     max-width: var(--max-width);
 }
 /* ---- */
+
+/* Botón */
+.btn {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    display: inline-block;
+    width: 200px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: var(--white-color);
+    background-color: var(--first-color);
+}
+/* Botón */
 /* **************************************** UTILITIES **************************************** */
 
 /* **************************************** HEADER **************************************** */
@@ -241,9 +255,9 @@ p {
     background-size: cover;
     background-position: center;
     background-attachment: var(--hero-attachment);
-  }
+}
   
-  .hero-image-opacity {
+.hero-image-opacity {
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -251,10 +265,15 @@ p {
     align-items: center;
     text-align: center;
     background-color: var(--hero-opacity-color); 
-  }
+}
   
-  .hero-image-title {
+.hero-image-title {
     font-size: 7.5vw;
     color: var(--hero-text-color);
-  }
+}
+
+.hero-image-title {
+    font-size: 7.5vw;
+    color: var(--hero-text-color);
+}
 /* **************************************** HOME **************************************** */
