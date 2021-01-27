@@ -250,11 +250,11 @@ p {
 /* **************************************** HOME **************************************** */
 .hero-image {
     /* variables --image y --attachment son declaradas en el html con style */
-    background-image: var(--hero-image);
+    background-image: url(/assets/hero-image-home.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: var(--hero-attachment);
+    background-attachment: fixed;
 }
   
 .hero-image-opacity {
@@ -264,16 +264,11 @@ p {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: var(--hero-opacity-color); 
+    background-color: var(--black-alpha-color); 
 }
   
 .hero-image-title {
     font-size: 7.5vw;
-    color: var(--hero-text-color);
-}
-
-.hero-image-title {
-    font-size: 7.5vw;
-    color: var(--hero-text-color);
+    color: var(--white-color);
 }
 /* **************************************** HOME **************************************** */
