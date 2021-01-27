@@ -250,7 +250,7 @@ p {
 /* **************************************** HOME **************************************** */
 .hero-image {
     /* variables --image y --attachment son declaradas en el html con style */
-    background-image: url(/assets/hero-image-home.jpg);
+    background-image: url(../assets/hero-image-home.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
