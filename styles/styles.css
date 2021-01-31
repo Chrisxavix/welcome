@@ -343,6 +343,11 @@ Móvil y PC*/
 /* **************************************** HOME **************************************** */
 
 /* **************************************** ABOUT **************************************** */
+.about {
+    width: 100%;
+    height: auto;
+}
+
 .about-profile {
     width: 100%;
     text-align: center;
@@ -382,7 +387,8 @@ Móvil y PC*/
         display: grid;
         grid-template-columns: repeat(2, 49%);
         justify-content: space-between;
-        grid-auto-rows: 4rem;
+        justify-content: space-between;
+        grid-template-rows: 70px auto;
     }
 
     .about h2 {
@@ -391,3 +397,43 @@ Móvil y PC*/
 }
 /* Para Tablet y PC */
 /* **************************************** ABOUT **************************************** */
+
+
+/* **************************************** STUDIES **************************************** */
+.education-image {
+    /* variables --image y --attachment son declaradas en el html con style */
+    background-image: url(../assets/education.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+}
+  
+.education-image-opacity {
+    text-align: center;
+    background-color: var(--white-alpha-color); 
+}
+
+.education-card {
+    margin: 1rem auto;
+    padding: 2rem 1rem;
+    max-width: 407px;
+    text-align: left;
+    background-color: var(--white-alpha-color);
+}
+
+/* Para Tablet y PC */
+@media screen and (min-width: 768px) {
+    .education-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        justify-content: space-between;
+        grid-template-rows: auto auto;
+    }
+
+    .education-cards h2 {
+        grid-column: span 2;
+    }
+}
+/* Para Tablet y PC */
+/* **************************************** STUDIES **************************************** */
