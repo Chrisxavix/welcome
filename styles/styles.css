@@ -213,18 +213,6 @@ Móvil y PC*/
     max-height: 40px;
 }
 
-.logo a label {
-    font-size: 1rem;
-    /* Poner una letra manuscrita */
-    font-family: 'Franklin Gothic Medium';
-    color: var(--color-first);
-    margin-left: 1rem;
-}
-
-.logo a label:hover {
-    color: var(--white-color);
-}
-
 .menu-btn {
     outline: thin solid var(--color-first);
     border: 0;
@@ -331,6 +319,16 @@ Móvil y PC*/
 .hero-image-title {
     font-size: 7.5vw;
     color: var(--white-color);
+}
+
+.hero-image-subtitle {
+    font-size: 5.5vw;
+    color: var(--white-color);
+}
+
+.hero-image-content svg {
+    width: 100px;
+    height: 100px;
 }
 /* **************************************** HOME **************************************** */
 
