@@ -138,12 +138,16 @@ p {
 .margin-top {
     margin-top: 1rem;
 }
+
+.margin-top-2 {
+    margin-top: 2rem;
+}
 /* Clases para alinear */
 
 /* Para dar espacios entre las secciones entre el inicio y acerca
 Móvil y PC*/
 .section {
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -153,7 +157,7 @@ Móvil y PC*/
     }
 
     .sectionAbout {
-        padding: 3.6rem 1rem;
+        padding: 3.5rem 1rem;
     }
 
     /* Clases para alinear PC*/
@@ -177,11 +181,17 @@ Móvil y PC*/
 /* Para dar espacios entre las secciones entre el inicio y acerca
 Móvil y PC*/
 
-/* Grises en la foto */
-.gray-scale {
-    filter: grayscale(1);
+/* Títulos para cada section */
+.section-title {
+    border-top: thin solid var(--first-color);
+    border-bottom: thin solid var(--first-color);
+    margin: 0.5rem auto;
+    padding: 0.5rem 1rem;
+    width: 250px;
+    text-align: center;
+    color: var(--title-color);
 }
-/* Grises en la foto */
+/* Títulos para cada section */
 /* **************************************** UTILITIES **************************************** */
 
 /* **************************************** HEADER **************************************** */
@@ -333,57 +343,33 @@ Móvil y PC*/
 /* **************************************** HOME **************************************** */
 
 /* **************************************** ACERCA **************************************** */
-.about > article {
-    margin-bottom: 2rem;
+.about-profile {
+    width: 100%;
+    text-align: center;
 }
 
-/* Para PC */
-@media screen and (min-width: 1024px) {
+.about-profile img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 0 2rem rgb(0, 119, 255, 0.3);
+}
+
+/* Para Tablet y PC */
+@media screen and (min-width: 768px) {
     .about {
         display: grid;
-        grid-template-columns: repeat(3, 30%);
+        grid-template-columns: repeat(2, 49%);
         justify-content: space-between;
-        align-content: center;
+        grid-auto-rows: 4rem;
+    }
+
+    .about h2 {
+        grid-column: span 2;
     }
 }
-/* Para PC */
-
-/* ProgresBar */
-/* Etiqueta general */
-progress {
-    width: 100%;
-    height: 1rem;
-    background-color: var(--gray-color);
-}
-/* Etiqueta general */
-
-progress::-webkit-progress-bar {
-    /* La barra para llegar al 100, del color gris */
-    background-color: var(--gray-color);
-}
-
-progress::-webkit-progress-value {
-    /* EL color del porcentaje marcado */
-    background-color: var(--gray-dark-color);
-}
-
-/* Para que agarre color en firefox el value */
-progress::-moz-progress-bar {
-    background-color: var(--gray-dark-color);
-}
-
-/* Clase progres */
-.progress {
-    margin: 1rem auto;
-}
-/* Clase progres */
-
-/* Hijos directos de progress que llevan p (>) */
-.progress > p {
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.85rem;
-}
-/* ProgresBar */
+/* Para Tablet y PC */
 /* **************************************** ACERCA **************************************** */
+
+
+
