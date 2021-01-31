@@ -342,7 +342,7 @@ Móvil y PC*/
 }
 /* **************************************** HOME **************************************** */
 
-/* **************************************** ACERCA **************************************** */
+/* **************************************** ABOUT **************************************** */
 .about-profile {
     width: 100%;
     text-align: center;
@@ -353,6 +353,27 @@ Móvil y PC*/
     width: 200px;
     height: 200px;
     box-shadow: 0 0 2rem rgb(0, 119, 255, 0.3);
+}
+
+.table {
+    margin: 15px 0;
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.table__data {
+    padding-left: 1rem;
+}
+
+.table__data-svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--link-color);
+} 
+
+.about-link {
+    text-decoration: none;
 }
 
 /* Para Tablet y PC */
@@ -369,7 +390,4 @@ Móvil y PC*/
     }
 }
 /* Para Tablet y PC */
-/* **************************************** ACERCA **************************************** */
-
-
-
+/* **************************************** ABOUT **************************************** */
