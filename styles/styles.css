@@ -432,3 +432,244 @@ Móvil y PC*/
 }
 /* Para Tablet y PC */
 /* **************************************** STUDIES **************************************** */
+
+/* **************************************** CONTACT **************************************** */
+/* Cartas de contacto */
+.contact-card {
+    width: 100%;
+    height: 144px;
+    padding: 1rem;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-card > svg {
+  width: 2rem;
+  height: 2rem;
+  fill: var(--first-color);
+}
+
+.contact-card > small {
+  margin-top: -1rem;
+}
+
+/* el box-shadow es para las sombras de las cajas */
+.box-shadow-1 {
+    box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25);
+}
+/* Cartas de contacto */
+
+.contact-link {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+.social-media a {
+    padding: 0 0.4rem;
+    text-decoration: none;
+}
+
+.social-media-svg {
+    height: 23px;
+    width: 23px;
+}
+
+.title-social-media {
+    margin-bottom: 20px;
+}
+
+/* Para Tablets */
+@media screen and (min-width: 768px) {
+    .contact-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+        justify-content: space-between;
+    }
+}
+/* Para Tablets */
+
+/* Para PC */
+@media screen and (min-width: 1024px) {
+    .contact-cards {
+        display: grid;
+        grid-template-columns: repeat(4, 24%);
+        justify-content: space-between;
+    }
+}
+/* Para PC */
+
+/* -------------------- Formulario de Contacto -------------------- */
+.contact-form {
+    margin: 2rem auto;
+    padding: 1rem;
+    max-width: 800px;
+}
+
+/* A todos los elementos de contact-form */
+.contact-form > * {
+    padding: 0.5rem;
+    margin: 1rem auto;
+    display: block;
+    width: 100%;
+}
+
+/* Aplicar la misma fuente a los input y textarea */
+.contact-form input,
+.contact-form textarea {
+  font-size: 0.85rem;
+  font-family: var(--font);
+}
+
+.contact-form input {
+    border: 0;
+    padding-left: 0;
+    border-bottom: thin solid var(--gray-dark-color);
+}
+  
+.contact-form textarea {
+    border: thin solid var(--gray-dark-color);
+    resize: none;
+}
+
+/* Clase con selector de atributos */
+.contact-form input[type="submit"] {
+    margin-top: 0;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+/* Clase con selector de atributos con hover */
+.contact-form input[type="submit"]:hover {
+    opacity: 0.75;
+}
+
+.contact-form *::placeholder {
+    color: var(--gray-dark-color);
+}
+
+/* El diseño del modal, después de eviar por correo */
+.contact-form-response {
+    padding: 1rem;
+    width: 400px;
+    text-align: center;
+    background-color: var(--white-color);
+}
+
+/* Diseño del svg del modal */
+.contact-form-response svg {
+    margin-top: 2rem;
+    width: 4rem;
+    height: 4rem;
+    fill: var(--first-color);
+}
+
+/* Activar el modal de gracias */
+.modal#gracias:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+@media screen and (min-width: 1024px) {
+    .contact-form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+    }
+  
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 1rem;
+    }
+  
+    /* Darle dos expacios con span para que ocupe las dos columnas */
+    .contact-form textarea,
+    .contact-form-loader,
+    .button-form-submint {
+        grid-column: span 2;
+    }
+}
+/* -------------------- Formulario de Contacto -------------------- */
+/* Activar el modal de gracias */
+.modal#gracias:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* ------------------------- COMPONENTS: MODAl ------------------------- */
+.modal {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black-alpha-color);
+    opacity: 0;
+    pointer-events: none;
+    /* Segundos para abrir el modal con transición */
+    transition: all 0.3s;
+}
+
+.modal-content {
+    position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.modal-close svg {
+    width: 3rem;
+    height: 3rem;
+    fill: var(--first-color);
+}
+
+.modal[id|="trabajo"]:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.ghost {
+    display: none;
+}
+/* ------------------------- COMPONENTS: MODAl ------------------------- */
+/* **************************************** CONTACT **************************************** */
+
+/* **************************************** FOOTER **************************************** */
+.footer {
+    margin-bottom: var(--header-height);
+    padding: 0.5rem; 
+    text-align: center;
+    color: var(--white-color);
+    background-color: var(--second-color);
+}
+
+.footer small {
+    font-size: 13px;
+}
+
+.footer small  a {
+    margin-left: 5px;
+    color: var(--first-color);
+    font-weight: bold;
+}
+
+@media screen and (min-width: 1024px) {
+    .footer {
+        margin-bottom: 0;
+    }
+
+    .footer small {
+        font-size: 17px;
+    }
+}
+/* **************************************** FOOTER **************************************** */
