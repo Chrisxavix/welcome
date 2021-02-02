@@ -433,6 +433,92 @@ Móvil y PC*/
 /* Para Tablet y PC */
 /* **************************************** STUDIES **************************************** */
 
+/* **************************************** SKILLS **************************************** */
+.bg-gray-light {
+    background-color: var(--gray-light-color);
+}
+
+progress {
+    width: 100%;
+    height: 0.3rem;
+    background-color: var(--gray-color);
+}
+
+progress::-webkit-progress-bar {
+    /* La barra para llegar al 100, del color gris */
+    background-color: var(--gray-color);
+}
+
+progress::-webkit-progress-value {
+    /* EL color del porcentaje marcado */
+    background-color: var(--color-first);
+}
+
+/* Para que agarre color en firefox el value */
+progress::-moz-progress-bar {
+    background-color: var(--color-first);
+}
+
+.progress {
+    margin: 0.4rem auto;
+}
+
+.progress-card {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+.progress-image {
+    text-align: end;
+    align-self: center;
+}
+
+.progress-svg {
+    height: 23px;
+    width: 23px;
+}
+
+.progress-card b {
+    font-size: 0.9rem;
+    align-self: center;
+}
+
+.skills h2{
+    margin-bottom: 2rem;
+}
+
+/* Para Tablets */
+@media screen and (min-width: 768px) {
+    .skills {
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+        gap: 0 30px;
+        justify-content: center;
+    }
+
+    .skills h2 {
+        grid-column: span 2;
+    }
+
+    .progress {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .progress-svg {
+        height: 30px;
+        width: 30px;
+    }
+    
+    .progress-card b {
+        font-size: 1.3rem;
+        align-self: center;
+    }
+}
+/* Para Tablets */
+/* **************************************** SKILLS **************************************** */
+
 /* **************************************** CONTACT **************************************** */
 /* Cartas de contacto */
 .contact-card {
