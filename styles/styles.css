@@ -780,6 +780,60 @@ progress::-moz-progress-bar {
 /* ------------------------- COMPONENTS: MODAl ------------------------- */
 /* **************************************** CONTACT **************************************** */
 
+/* **************************************** SOCIAL FLOATING **************************************** */
+.social-whatsapp {
+    position: fixed;
+    top: 30px;
+    left: 20px;
+	width: 60px;
+    z-index: 1000;
+	display: block;
+}
+
+.social-whatsapp i {
+    font-size: 40px;
+    color: #1ebea5;
+}
+
+.social-messenger {
+    position: fixed;
+    top: 80px;
+    left: 20px;
+	width: 60px;
+    z-index: 1000;
+	display: block;
+}
+
+.social-messenger i {
+    font-size: 40px;
+    color: #0084ff;
+}
+
+@media screen and (min-width: 1024) {
+    .social-whatsapp {
+        top: auto;
+        left: auto;
+        right: 24px;
+        bottom: 95px;
+    }
+    
+    .social-whatsapp i {
+        font-size: 60px;
+    }
+
+    .social-messenger {
+        top: auto;
+        left: auto;
+        right: 24px;
+        bottom: 24px;
+    }
+    
+    .social-messenger i {
+        font-size: 60px;
+    }
+}
+/* **************************************** SOCIAL FLOATING **************************************** */
+
 /* **************************************** FOOTER **************************************** */
 .footer {
     margin-bottom: var(--header-height);
