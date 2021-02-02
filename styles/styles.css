@@ -668,6 +668,15 @@ progress::-moz-progress-bar {
     color: var(--title-color);
 }
 
+.project-modal img {
+    width: 40%;
+    height: 40%;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .project-details {
     display: grid;
     grid-template-columns: 30% 70%;
@@ -701,6 +710,10 @@ progress::-moz-progress-bar {
     .project-info {
         margin-left: 1rem;
         align-self: center;
+    }
+
+    .project-modal img {
+        margin-top: 0;
     }
 }
 
