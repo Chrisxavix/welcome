@@ -616,7 +616,7 @@ progress::-moz-progress-bar {
 /* Modal */
 .modal-project {
     position: fixed;
-    z-index: 999;
+    z-index: 1010;
     top: 0;
     right: 0;
     bottom: 0;
