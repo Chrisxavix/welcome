@@ -383,7 +383,6 @@ Móvil y PC*/
         display: grid;
         grid-template-columns: repeat(2, 49%);
         justify-content: space-between;
-        justify-content: space-between;
         grid-template-rows: 70px auto;
     }
 
@@ -484,20 +483,20 @@ progress::-moz-progress-bar {
     align-self: center;
 }
 
-.skills h2{
+.skill h2{
     margin-bottom: 2rem;
 }
 
 /* Para Tablets */
 @media screen and (min-width: 768px) {
-    .skills {
+    .skill {
         display: grid;
         grid-template-columns: repeat(2, 45%);
         gap: 0 30px;
         justify-content: center;
     }
 
-    .skills h2 {
+    .skill h2 {
         grid-column: span 2;
     }
 
@@ -568,6 +567,154 @@ progress::-moz-progress-bar {
 }
 /* Para Tablets */
 /* **************************************** EXPERIENCE **************************************** */
+
+/* **************************************** PROJECTS **************************************** */
+/* Project */
+.project-card {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.project-card img {
+    width: 100%;
+    height: 100%;
+    /* Si las imágenes pierden aspecto se usa object-fit */
+    object-fit: cover;
+}
+
+.project-card-info {
+    /* Con position absolute, top 0, left 0, los textos se posiciona dentro de la image*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    background-color: var(--first-alpha-color);
+    color: var(--white-color);
+    opacity: 0;
+    pointer-events: none;
+    /* Animación al seleccionar una tarjeta */
+    transition: all 0.5s ease-in-out;
+}
+
+.project-card-info > div {
+    padding: 1rem;
+    border: thin solid var(--white-color);
+    width: 100%;
+    height: 100%;
+}
+
+.project-card:hover .project-card-info {
+    opacity: 1;
+    pointer-events: auto;
+}
+/* Project */
+
+/* Modal */
+.modal-project {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black-alpha-color);
+    opacity: 0;
+    pointer-events: none;
+    /* Segundos para abrir el modal con transición */
+    transition: all 0.3s;
+}
+
+.modal-project[id|="trabajo"]:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-content-project {
+    position: relative;
+}
+
+.modal-close-project {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.modal-close-project svg {
+    width: 3rem;
+    height: 3rem;
+    fill: var(--first-color);
+}
+
+.project-modal {
+    padding: 1rem;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: var(--white-color);
+}
+
+.project-modal h3 {
+    border-bottom: medium solid var(--first-color);
+    margin: 1rem auto;
+    padding: 0.5rem 0;
+    color: var(--title-color);
+}
+
+.project-details {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-auto-rows: 2rem;
+}
+
+.project-details b {
+    color: var(--first-color);
+}
+/* Modal */
+
+@media screen and (min-width: 768px) {
+    .project > .container {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        justify-content: space-evenly;
+        gap: 10px 10px;
+    }
+
+    .project .section-title {
+        grid-column: span 2;
+        margin-bottom: 40px;
+    }
+
+    /* Para abrir el modal con información, al estar declarado para tablets no hace falta hacerlo para escritorio */
+    .project-modal {
+        max-width: 800px;
+        flex-direction: row;
+    }
+
+    .project-info {
+        margin-left: 1rem;
+        align-self: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .project > .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .project .section-title {
+        grid-column: span 3;
+    }
+}
+/* **************************************** PROJECTS **************************************** */
 
 /* **************************************** CONTACT **************************************** */
 /* Cartas de contacto */
