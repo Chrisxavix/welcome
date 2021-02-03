@@ -521,13 +521,13 @@ progress::-moz-progress-bar {
 
 /* **************************************** EXPERIENCE **************************************** */
 .experience-container {
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
     padding: 1.5rem 0;
 }
 
 .experience-item {
-    padding: 3rem 2rem 0.2rem;
+    padding: 2.5rem 0.1rem 0.1rem 1.5rem;
     position: relative;
     border-left: 4px solid rgb(128, 124, 124);
 }
@@ -558,14 +558,49 @@ progress::-moz-progress-bar {
     border-image: linear-gradient(to bottom, rgb(128, 124, 124) 60%, rgba(0, 0, 0, 0)) 1 100%;
 }
 
+.experience-item {
+    width: 100%;
+}
+.experience-item ul {
+    margin: 0;
+    padding: 0;
+}
+
+.experience-item-li {
+    margin: 0;
+    padding: 0;
+    margin-left: 1.5rem;
+    color: rgb(90, 86, 86);
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.experience-item-i {
+    color: var(--black-color);
+    font-weight: lighter;
+}
+
+.experience-link {
+    font-size: 10px;
+    margin-top: 15px;
+}
 /* Para Tablets */
 @media screen and (min-width: 768px) {
+    .experience-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+/* Para Tablets */
+
+/* Para PC */
+@media screen and (min-width: 1024px) {
     .experience-container {
         width: 50%;
         margin: 0 auto;
     }
 }
-/* Para Tablets */
+/* Para PC */
 /* **************************************** EXPERIENCE **************************************** */
 
 /* **************************************** PROJECTS **************************************** */
