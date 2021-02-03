@@ -194,7 +194,7 @@ Móvil y PC*/
     position: fixed;
     left: 0;
     bottom: 0;
-    z-index: 999;
+    z-index: 1200;
     padding: 1rem;
     width: 100%;
     height: var(--header-height);
