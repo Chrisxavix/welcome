@@ -642,6 +642,10 @@ progress::-moz-progress-bar {
     height: 100%;
 }
 
+.project-card-info > div h3{
+    text-align: center;
+}
+
 .project-card:hover .project-card-info {
     opacity: 1;
     pointer-events: auto;
@@ -651,7 +655,7 @@ progress::-moz-progress-bar {
 /* Modal */
 .modal-project {
     position: fixed;
-    z-index: 1010;
+    z-index: 1200;
     top: 0;
     right: 0;
     bottom: 0;
@@ -716,6 +720,8 @@ progress::-moz-progress-bar {
     display: grid;
     grid-template-columns: 30% 70%;
     grid-auto-rows: 2rem;
+    gap: 2px 0;
+    align-items: center;
 }
 
 .project-details b {
@@ -723,12 +729,21 @@ progress::-moz-progress-bar {
 }
 /* Modal */
 
+.project-info p {
+    margin: 6px 0;
+    font-size: 14px;
+}
+
 @media screen and (min-width: 768px) {
     .project > .container {
         display: grid;
         grid-template-columns: repeat(2, 50%);
         justify-content: space-evenly;
         gap: 10px 10px;
+    }
+    
+    .margin-top {
+        margin-top: 0;
     }
 
     .project .section-title {
@@ -749,6 +764,7 @@ progress::-moz-progress-bar {
 
     .project-modal img {
         margin-top: 0;
+        align-self: center;
     }
 }
 
