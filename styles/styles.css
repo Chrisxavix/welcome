@@ -718,10 +718,11 @@ progress::-moz-progress-bar {
 
 .project-details {
     display: grid;
-    grid-template-columns: 30% 70%;
-    grid-auto-rows: 2rem;
-    gap: 2px 0;
+    grid-template-columns: 25% 70%;
+    grid-auto-rows: auto;
     align-items: center;
+    font-size: 11px;
+    gap: 0.5rem;
 }
 
 .project-details b {
@@ -731,7 +732,7 @@ progress::-moz-progress-bar {
 
 .project-info p {
     margin: 6px 0;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 @media screen and (min-width: 768px) {
@@ -765,6 +766,15 @@ progress::-moz-progress-bar {
     .project-modal img {
         margin-top: 0;
         align-self: center;
+    }
+
+    .project-info p {
+        font-size: 15px;
+    }
+
+    .project-details {
+        font-size: 14px;
+        gap: 1rem 0;
     }
 }
 
