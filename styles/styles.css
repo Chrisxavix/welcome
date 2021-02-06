@@ -752,12 +752,6 @@ progress::-moz-progress-bar {
 }
 
 @media screen and (min-width: 768px) {
-    .project > .container {
-        display: grid;
-        grid-template-columns: repeat(2, 50%);
-        justify-content: space-evenly;
-        gap: 10px 10px;
-    }
 
     .project-card-info > div h3{
         font-size: 1.5rem;
