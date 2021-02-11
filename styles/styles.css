@@ -493,7 +493,7 @@ progress::-moz-progress-bar {
         display: grid;
         grid-template-columns: repeat(2, 45%);
         gap: 0 30px;
-        justify-content: center;
+        align-items: flex-end;
     }
 
     .skill h2 {
