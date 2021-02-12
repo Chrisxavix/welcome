@@ -377,6 +377,34 @@ Móvil y PC*/
     text-decoration: none;
 }
 
+.downland-cv {
+    display: grid;
+    grid-template-columns: repeat(2, 46%);
+    margin-top: 20px;
+    grid-template-rows: auto;
+    text-align: center;
+    justify-items: center;
+}
+
+.downland-cv h4 {
+    grid-column: span 2;
+    margin-bottom: 1rem;
+}
+
+/* Botón CV */
+.btn-cv {
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+    display: inline-block;
+    width: 150px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: var(--white-color);
+    background-color: var(--first-color);
+}
+/* Botón CV */
+
 /* Para Tablet y PC */
 @media screen and (min-width: 768px) {
     .about {
