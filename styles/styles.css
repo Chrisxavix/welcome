@@ -501,6 +501,20 @@ progress::-moz-progress-bar {
     align-self: center;
 }
 
+.img-svg {
+    width: 23px;
+}
+
+.img-svg-firebase {
+    width: 90px;
+    height: 30px;
+}
+
+.img-svg-postgresql {
+    width: 80px;
+    height: 23px;
+}
+
 .progress-svg {
     height: 23px;
     width: 23px;
@@ -538,6 +552,20 @@ progress::-moz-progress-bar {
     .progress-svg {
         height: 30px;
         width: 30px;
+    }
+
+    .img-svg {
+        width: 30px;
+    }
+
+    .img-svg-firebase {
+        width: 110px;
+        height: 45px;
+    }
+
+    .img-svg-postgresql {
+        width: 100px;
+        height: 30px;
     }
     
     .progress-card b {
