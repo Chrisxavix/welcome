@@ -632,6 +632,11 @@ progress::-moz-progress-bar {
     font-size: 0.9rem;
 }
 
+.items-style {
+    color: #000;
+    font-weight: lighter;
+}
+
 .experience-item-i {
     color: var(--black-color);
     font-weight: lighter;
