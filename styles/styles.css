@@ -142,6 +142,10 @@ p {
 .margin-top-2 {
     margin-top: 2rem;
 }
+
+.mgn-bttm {
+    margin-bottom: 5px;
+}
 /* Clases para alinear */
 
 /* Para dar espacios entre las secciones entre el inicio y acerca
@@ -417,6 +421,10 @@ Móvil y PC*/
     .about h2 {
         grid-column: span 2;
     }
+
+    .about_son {
+        align-self: center;
+    }
 }
 /* Para Tablet y PC */
 /* **************************************** ABOUT **************************************** */
@@ -494,6 +502,7 @@ progress::-moz-progress-bar {
 .progress-card {
     display: grid;
     grid-template-columns: repeat(2, 50%);
+    border-bottom: 0.1px solid var(--link-color);
 }
 
 .progress-image {
