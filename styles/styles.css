@@ -502,7 +502,7 @@ progress::-moz-progress-bar {
 .progress-card {
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    border-bottom: 0.1px solid var(--link-color);
+    border-bottom: 1px solid var(--link-color);
 }
 
 .progress-image {
