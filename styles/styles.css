@@ -156,7 +156,8 @@ Móvil y PC*/
 
 @media screen and (min-width: 1024px) {
     .sectionAbout {
-        padding: 3.5rem 1rem;
+        padding-bottom: 1px;
+        padding-top: 3.5rem;
     }
 
     /* Clases para alinear PC*/
@@ -381,26 +382,27 @@ Móvil y PC*/
     text-decoration: none;
 }
 
+/* Se comenta porque se retira el botón de descargar en modo diseño */
 .downland-cv {
-    display: grid;
-    grid-template-columns: repeat(2, 46%);
+    /* display: grid;
+    grid-template-columns: repeat(2, 46%); */
     margin-top: 20px;
-    grid-template-rows: auto;
+    /* grid-template-rows: auto; */
     text-align: center;
     justify-items: center;
 }
 
-.downland-cv h4 {
+/* .downland-cv h4 {
     grid-column: span 2;
     margin-bottom: 1rem;
-}
+} */
 
 /* Botón CV */
 .btn-cv {
     border-radius: 0.5rem;
     padding: 0.2rem;
     display: inline-block;
-    width: 150px;
+    width: 200px;
     font-weight: bold;
     text-align: center;
     text-decoration: none;
@@ -522,6 +524,11 @@ progress::-moz-progress-bar {
 .img-svg-postgresql {
     width: 80px;
     height: 23px;
+}
+
+.img-svg-outsystems {
+    width: 43px;
+    height: 43px;
 }
 
 .progress-svg {
