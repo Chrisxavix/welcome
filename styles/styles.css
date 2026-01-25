@@ -516,12 +516,21 @@ progress::-moz-progress-bar {
     width: 23px;
 }
 
+.img-svg_big {
+    width: 80px;
+}
+
 .img-svg-firebase {
     width: 90px;
     height: 30px;
 }
 
 .img-svg-postgresql {
+    width: 80px;
+    height: 23px;
+}
+
+.img-svg-big-three {
     width: 80px;
     height: 23px;
 }
